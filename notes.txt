@@ -1,0 +1,2 @@
+database user: erp_db_user
+database name: erp_db

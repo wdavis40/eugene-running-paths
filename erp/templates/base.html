@@ -1,0 +1,34 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+  <head>
+    <title>Eugene Running Paths {% block title %} {% endblock %}</title>
+    {% block javascript %} {% endblock %}
+  </head>
+  <body>
+
+    {% block body %}
+    <div id="container">
+      <div class="top">
+        <img src="/static/images/tree.gif" alt="Tree" id="icon">
+        <H1><a href="/erp.html">Eugene Running Paths</a></H1>
+        <p> The premier website for running paths in the Eugene/Springfield Oregon area. </p>
+      </div>
+      <div id="nav" class="navigation">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/paths/">Paths</a></li>
+        </ul>
+      </div>
+      <div id="content">
+      {% block content %}
+      {% endblock %}
+      </div>
+      <div id="footer">
+        Footer! Footer! Footer! Footer! Footer! Footer! Footer! Footer! Footer! Footer! Footer! Footer! Footer! Footer! Footer! Footer! Footer! Footer! Footer! Footer! Footer! Footer! Footer! Footer! 
+      </div>
+    </div>
+    {% endblock %}
+
+  </body>
+</html>
