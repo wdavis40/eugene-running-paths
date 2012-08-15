@@ -1,5 +1,5 @@
 from django.conf.urls import patterns, include, url
-from erp.views import hello, home, paths
+from erp.views import home, paths, about
 
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
@@ -15,7 +15,7 @@ urlpatterns = patterns('',
 
     # Uncomment the next line to enable the admin:
     # url(r'^admin/', include(admin.site.urls)),
-    ('^hello/$', hello),
     ('^$', home),
-    ('^paths/$', paths)
+    ('^paths/$', paths),
+    ('^about/$', about)
 )
