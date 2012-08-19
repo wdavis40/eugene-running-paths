@@ -1,2 +1,5 @@
 database user: erp_db_user
 database name: erp_db
+
+superuser: superdjango
+password: what do you think?
