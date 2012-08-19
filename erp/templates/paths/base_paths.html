@@ -6,4 +6,11 @@
 
 <p> Welcome to the paths page! </p>
 
+<p> The available paths are below. </p>
+<ul>
+{% for path in paths %}
+  <li>{{ path.name }}</li>
+{% endfor %}
+</ul>
+
 {% endblock %}

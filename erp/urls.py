@@ -1,5 +1,5 @@
 from django.conf.urls import patterns, include, url
-from erp.views import home, paths, about
+from erp.views import home, about
 from django.contrib import admin
 admin.autodiscover()
 
@@ -18,7 +18,7 @@ urlpatterns = patterns('',
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', home),
-    url(r'^paths/$', paths),
     url(r'^about/$', about),
+    url(r'^paths/$', 'paths.views.index'),
 
 )
