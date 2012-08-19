@@ -1,3 +1,4 @@
 *.pyc
-*~un
+*un~
 log.txt
+*.swp
