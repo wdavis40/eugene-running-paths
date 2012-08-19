@@ -9,3 +9,7 @@ class Path(models.Model):
 
   def __unicode__(self):
     return self.name
+
+  class Meta:
+    # This can be changed to affect the default order
+    ordering = ['id']
