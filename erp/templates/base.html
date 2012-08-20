@@ -3,13 +3,17 @@
   <head>
     <title>Eugene Running Paths {% block title %} {% endblock %}</title>
     {% block javascript %} {% endblock %}
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}/static/css/erp.css">
+    {% block css %} {% endblock %}
+    <link rel="icon" type="image/png" href="{{ STATIC_URL }}/static/images/tree.gif">
+
   </head>
   <body>
 
     {% block body %}
     <div id="container">
       <div class="top">
-        <img src="/static/images/tree.gif" alt="Tree" id="icon">
+        <img src="{{ STATIC_URL }}/static/images/tree.gif" alt="Tree" id="icon">
         <H1><a href="/">Eugene Running Paths</a></H1>
         <p> The premier website for running paths in the Eugene/Springfield Oregon area. </p>
       </div>
@@ -25,7 +29,8 @@
       {% endblock %}
       </div>
       <div id="footer">
-        Footer! Footer! Footer! Footer! Footer! Footer! Footer! Footer! Footer! Footer! Footer! Footer! Footer! Footer! Footer! Footer! Footer! Footer! Footer! Footer! Footer! Footer! Footer! Footer! 
+        <p>Created by Jerry and Wyatt Davis.
+        <p>Website design by <a href="http://www.wyattjoe.com">Wyatt Davis</a>.
       </div>
     </div>
     {% endblock %}
