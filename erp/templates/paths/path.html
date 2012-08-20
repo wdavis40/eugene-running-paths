@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %} | Paths {% endblock %}
+
+{% block content %}
+
+<H3> {{path.name}} </H3>
+
+<ul>
+  <li>Name: {{path.name}}</li>
+  <li>City: {{path.city}}</li>
+  <li>State: {{path.state_province}}</li>
+</ul>
+
+{% endblock %}

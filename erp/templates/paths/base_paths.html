@@ -9,7 +9,7 @@
 <p> The available paths are below. </p>
 <ul>
 {% for path in paths %}
-  <li>{{ path.name }}</li>
+  <li><a href="/paths/{{path.id}}/">{{ path.name }}</a></li>
 {% endfor %}
 </ul>
 

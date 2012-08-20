@@ -20,5 +20,6 @@ urlpatterns = patterns('',
     url(r'^$', home),
     url(r'^about/$', about),
     url(r'^paths/$', 'paths.views.index'),
+    url(r'^paths/(\d+)/$', 'paths.views.path'),
 
 )
