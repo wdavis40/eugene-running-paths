@@ -1,5 +1,5 @@
 body {
-  color: 228b22;
+  color: #228b22;
   font-family: sans-serif;
   text-align: center;
 }
@@ -12,7 +12,7 @@ body {
 }
 
 #content {
-  border: 2px solid 8fbc8f;
+  border: 2px solid #8fbc8f;
 }
 
 #icon {
@@ -27,6 +27,11 @@ body {
 
 ul {
   padding: 0px;
+  list-style: none;
+}
+
+#content li a{
+  text-decoration: underline;
 }
 
 .navigation {
